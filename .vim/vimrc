@@ -25,11 +25,11 @@ call plug#begin('~/.vim/plugged')
 	Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
 	Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 	Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
-	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+	"Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 	if has('nvim')
 		Plug 'nvim-lua/plenary.nvim'
 		Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
-		Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
+		"Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
 	endif
 call plug#end()
 
@@ -38,7 +38,7 @@ map <Leader> <Plug>(easymotion-prefix)
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
+"nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
 
 nmap <F8> :TagbarToggle<CR>
 
@@ -51,7 +51,7 @@ if has('nvim')
 
 	"let g:go_highlight_function_calls = 1
 	"let g:go_highlight_operators = 1
-	let g:go_highlight_variable_declarations = 1
-	let g:go_highlight_types = 1
-	let g:go_highlight_functions = 1
+	"let g:go_highlight_variable_declarations = 1
+	"let g:go_highlight_types = 1
+	"let g:go_highlight_functions = 1
 endif
