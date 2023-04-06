@@ -1,10 +1,10 @@
 # dotfiles
 ## mac os
 ```console
-mkdir ~/.vim -p && ln -s ~/dotfiles/vim/vimrc ~/.vim/vimrc
+mkdir -p ~/.vim && ln -s ~/dotfiles/vim/vimrc ~/.vim/vimrc
 ```
 ```console
-mkdir ~/.config/nvim -p && ln -s ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
+mkdir -p ~/.config/nvim && ln -s ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 ```
 
 ## windows
