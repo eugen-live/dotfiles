@@ -12,4 +12,7 @@ if has('nvim')
 	let g:go_highlight_variable_declarations = 1
 	let g:go_highlight_types = 1
 	let g:go_highlight_functions = 1
+	let g:OmniSharp_translate_cygwin_wsl = 1
+	inoremap <silent><expr> <c-space> coc#refresh()
 endif
+source ~/dotfiles/vim/omnisharp.vim
