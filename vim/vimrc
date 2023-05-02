@@ -37,3 +37,5 @@ if has('nvim')
 	nnoremap <leader><leader>fb <cmd>Telescope buffers<cr>
 	nnoremap <leader><leader>fh <cmd>Telescope help_tags<cr>
 endif
+
+cmap w!! w !sudo tee > /dev/null %
